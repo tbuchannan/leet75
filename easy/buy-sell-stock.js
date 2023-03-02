@@ -12,18 +12,15 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 const maxProfit = (prices) => {
   let max = 0;
   let slowPointer = 0;
+  let fastPointer = slowPointer + 1;
 
-  while (slowPointer < prices.length - 1) {
-    let fastPointer = slowPointer + 1;
-    while (fastPointer < prices.length) {
-      if (prices[slowPointer] > prices[fastPointer]) {
-        slowPointer = fastPointer;
-      } else {
-        max = Math.max(max, prices[fastPointer] - prices[slowPointer]);
-      }
-      fastPointer++;
+  while (fastPointer < prices.length) {
+    if (prices[slowPointer] > prices[fastPointer]) {
+      slowPointer = fastPointer;
+    } else {
+      max = Math.max(max, prices[fastPointer] - prices[slowPointer]);
     }
-    slowPointer++;
+    fastPointer++;
   }
   return max;
 };
