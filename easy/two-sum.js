@@ -5,10 +5,10 @@ You can return the answer in any order.
 
 Execution: twoSum([2,7,11,15], 9)
 Output: [0,1]
-*/
 
-// Time Complexity: O(N)
-// Space Complexity: O(N) (an object with N number of keys)
+Time Complexity: O(N)
+Space Complexity: O(N)
+*/
 
 const twoSum = (arr, target) => {
   const complementObj = {};
