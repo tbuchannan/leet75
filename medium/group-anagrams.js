@@ -12,8 +12,8 @@ Output: [[""]]
 Execution: groupAnagrams(["a"])
 Output: [["a"]])
 
-Time Complexity: O(N)
-Space Complexity: O(N)
+Time Complexity: O(N*M) N being the length of the array, M being the length of each of the words
+Space Complexity: O(N*M) N being the number of keys, M being the value
 */
 
 
@@ -25,7 +25,6 @@ const letterCounter = (str) => {
 
     return result.join()
 }
-
 
 
 const groupAnagrams = (strs) => {
