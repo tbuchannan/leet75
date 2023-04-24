@@ -1,0 +1,22 @@
+{
+  "name": "leet75",
+  "version": "1.0.0",
+  "description": "75 Leetcode Questions of varying difficulties",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbuchannan/leet75.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbuchannan/leet75/issues"
+  },
+  "homepage": "https://github.com/tbuchannan/leet75#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
