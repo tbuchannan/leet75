@@ -1,2 +1,29 @@
 # leet75
-75 Leetcode Questions of varying difficulties
+
+75 (WIP) Leetcode Questions of varying difficulties
+
+## Easy
+
+[Buy Sell Stock](easy\buySellStock.js)
+
+[Contains Duplicates](easy\containsDuplicate.js)
+
+[Two Sum](easy\twoSum.js)
+
+[Valid Anagrams](easy\validAnagrams.js)
+
+[Valid Palindrome](easy\validPalindrome.js)
+
+[Valid Parentheses](easy\validParentheses.js)
+
+## Medium
+
+[Group Anagrams](medium\groupAnagrams.js)
+
+[Min Stack](medium\minStack.js)
+
+[Three Sum](medium\threeSum.js)
+
+[Top K Frequent Elements](medium\topKFrequentElement.js)
+
+[Valid Sudoku](medium\validSudoku.js)
