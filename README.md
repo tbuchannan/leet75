@@ -4,26 +4,26 @@
 
 ## Easy
 
-[Buy Sell Stock](easy\buySellStock.js)
+[Buy Sell Stock](easy/buySellStock.js)
 
-[Contains Duplicates](easy\containsDuplicate.js)
+[Contains Duplicates](easy/containsDuplicate.js)
 
-[Two Sum](easy\twoSum.js)
+[Two Sum](easy/twoSum.js)
 
-[Valid Anagrams](easy\validAnagrams.js)
+[Valid Anagrams](easy/validAnagrams.js)
 
-[Valid Palindrome](easy\validPalindrome.js)
+[Valid Palindrome](easy/validPalindrome.js)
 
-[Valid Parentheses](easy\validParentheses.js)
+[Valid Parentheses](easy/validParentheses.js)
 
 ## Medium
 
-[Group Anagrams](medium\groupAnagrams.js)
+[Group Anagrams](medium/groupAnagrams.js)
 
-[Min Stack](medium\minStack.js)
+[Min Stack](medium/minStack.js)
 
-[Three Sum](medium\threeSum.js)
+[Three Sum](medium/threeSum.js)
 
-[Top K Frequent Elements](medium\topKFrequentElement.js)
+[Top K Frequent Elements](medium/topKFrequentElement.js)
 
-[Valid Sudoku](medium\validSudoku.js)
+[Valid Sudoku](medium/validSudoku.js)
