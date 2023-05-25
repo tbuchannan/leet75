@@ -21,14 +21,16 @@ Explanation: s is an empty string "" after removing non-alphanumeric characters.
 Since an empty string reads the same forward and backward, it is a palindrome.
 */
 
-
 const isPalindrome = (str) => {
-    let formatted = str.toLowerCase().match(/[a-z0-9]/g)?.join("")
-    let reversed = formatted?.split("").reverse().join("")
+  let formatted = str
+    .toLowerCase()
+    .match(/[a-z0-9]/g)
+    ?.join('')
+  let reversed = formatted?.split('').reverse().join('')
 
-    return formatted == reversed
+  return formatted == reversed
 }
 
-console.log(isPalindrome("A man, a plan, a canal: Panama")) // true
-console.log(isPalindrome("race a car")) // false
-console.log(isPalindrome(" ")) //true
+console.log(isPalindrome('A man, a plan, a canal: Panama')) // true
+console.log(isPalindrome('race a car')) // false
+console.log(isPalindrome(' ')) //true

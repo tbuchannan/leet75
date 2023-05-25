@@ -15,39 +15,33 @@ Space Complexity: O(N)
 
 const letterCounter = (str) => {
   let count = {}
-  for(let i =0; i < str.length; i++){
+  for (let i = 0; i < str.length; i++) {
     let char = str[i]
-    count[char] ? count[char] += 1 : count[char] = 1
+    count[char] ? (count[char] += 1) : (count[char] = 1)
   }
   return count
 }
 
-
-
 const isAnagram = (str1, str2) => {
-  if(str1.length !== str2.length) return false
-  let stringCount = letterCounter(str1);
+  if (str1.length !== str2.length) return false
+  let stringCount = letterCounter(str1)
 
   for (let i = 0; i < str2.length; i++) {
-    let char = str2[i];
-    if(stringCount[char]) {
+    let char = str2[i]
+    if (stringCount[char]) {
       stringCount[char] -= 1
     } else {
       return false
     }
   }
 
-
-  for(let key in stringCount){
+  for (let key in stringCount) {
     let val = stringCount[key]
-    if(val !== 0) return false
+    if (val !== 0) return false
   }
 
   return true
-};
+}
 
-console.log(isAnagram("anagram", "nagaram")); // -> true
-console.log(isAnagram("rat", "car")); // -> false
-
-
-
+console.log(isAnagram('anagram', 'nagaram')) // -> true
+console.log(isAnagram('rat', 'car')) // -> false

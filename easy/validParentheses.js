@@ -21,29 +21,26 @@ Space Complexity: O(N)
 
 */
 
-
-
-
 const isValidParentheses = (str) => {
-    if(str.length % 2 != 0) return false
-    let pairs = {
-        "{":"}",
-        "(":")",
-        "[":"]"
-    }
-    let stack = []
+  if (str.length % 2 != 0) return false
+  let pairs = {
+    '{': '}',
+    '(': ')',
+    '[': ']',
+  }
+  let stack = []
 
-    for (let i = 0; i < str.length; i++){
-        let char = str[i]
-        if(pairs[char]) {
-            stack.push(pairs[char])
-        } else {
-            let temp = stack.pop()
-            if(char != temp) return false
-        }
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i]
+    if (pairs[char]) {
+      stack.push(pairs[char])
+    } else {
+      let temp = stack.pop()
+      if (char != temp) return false
     }
-    if (stack.length > 0) return false
-    return true
+  }
+  if (stack.length > 0) return false
+  return true
 }
 
 console.log(isValidParentheses('()')) // -> true
