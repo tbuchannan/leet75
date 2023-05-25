@@ -13,41 +13,41 @@ Notice that the order of the output and the order of the triplets does not matte
 */
 
 const threeSum = (nums) => {
-  const result = [];
-  nums.sort((a, b) => a - b);
+  const result = []
+  nums.sort((a, b) => a - b)
 
   for (let i = 0; i < nums.length; i++) {
-    let num = nums[i];
-    let target = 0 - num;
+    let num = nums[i]
+    let target = 0 - num
 
-    let left = i + 1;
-    let right = nums.length - 1;
+    let left = i + 1
+    let right = nums.length - 1
     while (left < right) {
-      let summedNum = nums[left] + nums[right];
+      let summedNum = nums[left] + nums[right]
 
       if (summedNum < target) {
-        left++;
+        left++
       } else if (summedNum > target) {
-        right--;
+        right--
       } else {
-        result.push([num, nums[left], nums[right]]);
+        result.push([num, nums[left], nums[right]])
         while (nums[left] === nums[left + 1]) {
-          left++;
+          left++
         }
         while (nums[right] === nums[right - 1]) {
-          right--;
+          right--
         }
-        left++;
-        right--;
+        left++
+        right--
       }
     }
     while (nums[i] === nums[i + 1]) {
-      i++;
+      i++
     }
   }
-  return result;
-};
+  return result
+}
 
-console.log(threeSum([-1, 0, 1, 2, -1, -4]));
-console.log(threeSum([0, 1, 1]));
-console.log(threeSum([0, 0, 0]));
+console.log(threeSum([-1, 0, 1, 2, -1, -4]))
+console.log(threeSum([0, 1, 1]))
+console.log(threeSum([0, 0, 0]))

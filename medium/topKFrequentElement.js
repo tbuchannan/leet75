@@ -11,34 +11,33 @@ Follow up: Your algorithm's time complexity must be better than O(n log n), wher
 */
 
 const topKFrequent = (nums, k) => {
-    const letterCount = {}
-    const result = []
+  const letterCount = {}
+  const result = []
 
-    for(let i = 0; i < nums.length; i++){
-        if(letterCount[nums[i]] != null){
-            letterCount[nums[i]].count++
-        } else {
-            letterCount[nums[i]] = {count: 1}
-        }
+  for (let i = 0; i < nums.length; i++) {
+    if (letterCount[nums[i]] != null) {
+      letterCount[nums[i]].count++
+    } else {
+      letterCount[nums[i]] = { count: 1 }
     }
+  }
 
-    let letterCountArr = []
+  let letterCountArr = []
 
-    for(let key in letterCount){
-        let item = letterCount[key]
-        letterCountArr.push({num: key, count: item.count})
-    }
+  for (let key in letterCount) {
+    let item = letterCount[key]
+    letterCountArr.push({ num: key, count: item.count })
+  }
 
-    letterCountArr.sort((a, b)=> a.count - b.count)
+  letterCountArr.sort((a, b) => a.count - b.count)
 
+  let i = letterCountArr.length - 1
+  while (result.length < k) {
+    result.push(letterCountArr[i].num)
+    i--
+  }
 
-    let i = letterCountArr.length - 1
-    while(result.length < k){
-        result.push(letterCountArr[i].num)
-        i--
-    }
-
-    return result
+  return result
 }
 
 console.log(topKFrequent([4, 4, 4, 7, 7, 9], 2)) // [4, 7]
