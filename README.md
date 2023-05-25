@@ -29,3 +29,5 @@
 [Valid Sudoku](medium/validSudoku.js)
 
 [Evaluate Reverse Polish Notation](medium/evalReversePolishNotation.js)
+
+[Daily Temperatures](medium/dailyTemperatures.js)
