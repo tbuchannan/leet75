@@ -27,3 +27,5 @@
 [Top K Frequent Elements](medium/topKFrequentElement.js)
 
 [Valid Sudoku](medium/validSudoku.js)
+
+[Evaluate Reverse Polish Notation](medium/evalReversePolishNotation.js)
