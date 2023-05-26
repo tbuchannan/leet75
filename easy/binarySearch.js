@@ -13,6 +13,9 @@ Execution: binarySearch([-1,0,3,5,9,12], 2)
 Output: -1
 Explanation: 2 does not exist in nums so return -1
 
+Space Complexity: O(1)
+Time Complexity: O(log(n))
+
 */
 
 const iterativeBinarySearch = (nums, target) => {

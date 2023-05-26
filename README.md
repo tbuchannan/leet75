@@ -28,6 +28,8 @@
 
 [Min Stack](medium/minStack.js)
 
+[Search 2d Matrix](medium/search2DMatrix.js)
+
 [Three Sum](medium/threeSum.js)
 
 [Top K Frequent Elements](medium/topKFrequentElement.js)
