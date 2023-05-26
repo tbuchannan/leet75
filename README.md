@@ -6,6 +6,8 @@
 
 [Buy Sell Stock](easy/buySellStock.js)
 
+[Binary Search](easy/binarySearch.js)
+
 [Contains Duplicates](easy/containsDuplicate.js)
 
 [Two Sum](easy/twoSum.js)
@@ -18,6 +20,10 @@
 
 ## Medium
 
+[Daily Temperatures](medium/dailyTemperatures.js)
+
+[Evaluate Reverse Polish Notation](medium/evalReversePolishNotation.js)
+
 [Group Anagrams](medium/groupAnagrams.js)
 
 [Min Stack](medium/minStack.js)
@@ -26,10 +32,6 @@
 
 [Top K Frequent Elements](medium/topKFrequentElement.js)
 
-[Valid Sudoku](medium/validSudoku.js)
-
-[Evaluate Reverse Polish Notation](medium/evalReversePolishNotation.js)
-
-[Daily Temperatures](medium/dailyTemperatures.js)
-
 [Two Sum II Sorted Array](medium/twoSumIISortedArray.js)
+
+[Valid Sudoku](medium/validSudoku.js)
