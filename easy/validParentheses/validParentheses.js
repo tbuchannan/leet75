@@ -21,7 +21,7 @@ Space Complexity: O(N)
 
 */
 
-const isValidParentheses = (str) => {
+export const isValidParentheses = (str) => {
   if (str.length % 2 != 0) return false
   let pairs = {
     '{': '}',
@@ -42,9 +42,3 @@ const isValidParentheses = (str) => {
   if (stack.length > 0) return false
   return true
 }
-
-console.log(isValidParentheses('()')) // -> true
-console.log(isValidParentheses('()[]{}')) // -> true
-console.log(isValidParentheses('(]')) // -> false
-console.log(isValidParentheses('(((((')) // -> false
-console.log(isValidParentheses('(')) // -> false
