@@ -10,7 +10,7 @@ Space: O(N)
 Time: O(N)
 */
 
-const containsDup = (nums) => {
+export const containsDup = (nums) => {
   const seen = {}
 
   for (let i = 0; i < nums.length; i++) {
@@ -23,7 +23,3 @@ const containsDup = (nums) => {
   }
   return false
 }
-
-console.log(containsDup([1, 2, 3, 1])) // => true
-console.log(containsDup([1, 2, 3, 4])) // => false
-console.log(containsDup([1, 1, 1, 3, 3, 4, 3, 2, 4, 2])) // => true

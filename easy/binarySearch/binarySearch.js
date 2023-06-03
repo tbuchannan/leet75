@@ -18,7 +18,7 @@ Time Complexity: O(log(n))
 
 */
 
-const iterativeBinarySearch = (nums, target) => {
+export const iterativeBinarySearch = (nums, target) => {
   let low = 0
   let high = nums.length - 1
 
@@ -36,7 +36,7 @@ const iterativeBinarySearch = (nums, target) => {
   return -1
 }
 
-const recursiveBinarySearch = (nums, target, low = 0, high = nums.length - 1) => {
+export const recursiveBinarySearch = (nums, target, low = 0, high = nums.length - 1) => {
   if (low <= high) {
     let mid = low + Math.floor((high - low) / 2)
     if (nums[mid] < target) {
@@ -50,13 +50,3 @@ const recursiveBinarySearch = (nums, target, low = 0, high = nums.length - 1) =>
     return -1
   }
 }
-
-console.log(iterativeBinarySearch([-1, 0, 3, 5, 9, 12], 9)) // =>  4
-console.log(iterativeBinarySearch([-1, 0, 3, 5, 9, 12], 2)) // =>  -1
-console.log(iterativeBinarySearch([-1, 0, 3, 5, 9, 12], 12)) // =>  5
-console.log(iterativeBinarySearch([5], 0)) // =>  -1
-
-console.log(recursiveBinarySearch([-1, 0, 3, 5, 9, 12], 9)) // =>  4
-console.log(recursiveBinarySearch([-1, 0, 3, 5, 9, 12], 2)) // =>  -1
-console.log(iterativeBinarySearch([-1, 0, 3, 5, 9, 12], 12)) // =>  5
-console.log(recursiveBinarySearch([5], 0)) // =>  -1

@@ -4,36 +4,36 @@
 
 ## Easy
 
-[Buy Sell Stock](easy/buySellStock.js)
+[Buy Sell Stock](easy/buySellStock/buySellStock.js)
 
-[Binary Search](easy/binarySearch.js)
+[Binary Search](easy/binarySearch/binarySearch.js)
 
-[Contains Duplicates](easy/containsDuplicate.js)
+[Contains Duplicates](easy/containsDuplicate/containsDuplicate.js)
 
-[Two Sum](easy/twoSum.js)
+[Two Sum](easy/twoSum/twoSum.js)
 
-[Valid Anagrams](easy/validAnagrams.js)
+[Valid Anagrams](easy/validAnagrams/validAnagrams.js)
 
-[Valid Palindrome](easy/validPalindrome.js)
+[Valid Palindrome](easy/validPalindrome/validPalindrome.js)
 
-[Valid Parentheses](easy/validParentheses.js)
+[Valid Parentheses](easy/validParentheses/validParentheses.js)
 
 ## Medium
 
-[Daily Temperatures](medium/dailyTemperatures.js)
+[Daily Temperatures](medium/dailyTemperatures/dailyTemperatures.js)
 
-[Evaluate Reverse Polish Notation](medium/evalReversePolishNotation.js)
+[Evaluate Reverse Polish Notation](medium/evalReversePolishNotation/evalReversePolishNotation.js)
 
-[Group Anagrams](medium/groupAnagrams.js)
+[Group Anagrams](medium/groupAnagrams/groupAnagrams.js)
 
-[Min Stack](medium/minStack.js)
+[Min Stack](medium/minStack/minStack.js)
 
-[Search 2d Matrix](medium/search2DMatrix.js)
+[Search 2d Matrix](medium/search2DMatrix/search2DMatrix.js)
 
-[Three Sum](medium/threeSum.js)
+[Three Sum](medium/threeSum/threeSum.js)
 
-[Top K Frequent Elements](medium/topKFrequentElement.js)
+[Top K Frequent Elements](medium/topKFrequentElement/topKFrequentElement.js)
 
-[Two Sum II Sorted Array](medium/twoSumIISortedArray.js)
+[Two Sum II Sorted Array](medium/twoSumIISortedArray/twoSumIISortedArray.js)
 
-[Valid Sudoku](medium/validSudoku.js)
+[Valid Sudoku](medium/validSudoku/validSudoku.js)

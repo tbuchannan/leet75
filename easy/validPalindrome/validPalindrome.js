@@ -21,7 +21,7 @@ Explanation: s is an empty string "" after removing non-alphanumeric characters.
 Since an empty string reads the same forward and backward, it is a palindrome.
 */
 
-const isPalindrome = (str) => {
+export const isPalindrome = (str) => {
   let formatted = str
     .toLowerCase()
     .match(/[a-z0-9]/g)
@@ -30,7 +30,3 @@ const isPalindrome = (str) => {
 
   return formatted == reversed
 }
-
-console.log(isPalindrome('A man, a plan, a canal: Panama')) // true
-console.log(isPalindrome('race a car')) // false
-console.log(isPalindrome(' ')) //true
