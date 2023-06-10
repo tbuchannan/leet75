@@ -14,7 +14,7 @@ Time Complexity: O(N)
 Space Complexity: O(N)
 */
 
-const dailyTemperatures = (temperatures) => {
+export const dailyTemperatures = (temperatures) => {
   let result = new Array(temperatures.length).fill(0)
   let stack = []
 
@@ -29,7 +29,3 @@ const dailyTemperatures = (temperatures) => {
 
   return result
 }
-
-console.log(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73])) // => [1,1,4,2,1,1,0,0]
-console.log(dailyTemperatures([30, 40, 50, 60])) // => [1,1,1,0]
-console.log(dailyTemperatures([30, 60, 90])) // => [1,1,0]
