@@ -2,26 +2,27 @@
   "name": "leet75",
   "version": "1.0.0",
   "description": "75 Leetcode Questions of varying difficulties",
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/tbuchannan/leet75#readme",
   "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "prepare": "husky install"
+  "bugs": {
+    "url": "https://github.com/tbuchannan/leet75/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tbuchannan/leet75.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tbuchannan/leet75/issues"
-  },
-  "homepage": "https://github.com/tbuchannan/leet75#readme",
   "lint-staged": {
     "**/*.js": [
       "prettier --write",
       "npm test"
     ]
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.4",
