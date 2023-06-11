@@ -16,7 +16,7 @@ Time Complexity: O(N*M) N being the length of the array, M being the length of e
 Space Complexity: O(N*M) N being the number of keys, M being the value
 */
 
-const letterCounter = (str) => {
+export const letterCounter = (str) => {
   let result = new Array(26).fill(0)
   for (let i = 0; i < str.length; i++) {
     ;+result[str.charCodeAt(i) - 'a'.charCodeAt(0)]++
@@ -25,7 +25,7 @@ const letterCounter = (str) => {
   return result.join()
 }
 
-const groupAnagrams = (strs) => {
+export const groupAnagrams = (strs) => {
   let result = {}
   for (let i = 0; i < strs.length; i++) {
     let wordKey = letterCounter(strs[i])
@@ -37,7 +37,3 @@ const groupAnagrams = (strs) => {
   }
   return Object.values(result)
 }
-
-console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])) // -> [["bat"],["nat","tan"],["ate","eat","tea"]]
-console.log(groupAnagrams(['bdddddddddd', 'bbbbbbbbbbc'])) // -> [["bbbbbbbbbbc"],["bdddddddddd"]]
-console.log(groupAnagrams([''])) // -> [[""]]
