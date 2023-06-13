@@ -10,7 +10,7 @@ Output: [1]
 Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 */
 
-const topKFrequent = (nums, k) => {
+export const topKFrequent = (nums, k) => {
   const letterCount = {}
   const result = []
 
@@ -26,7 +26,7 @@ const topKFrequent = (nums, k) => {
 
   for (let key in letterCount) {
     let item = letterCount[key]
-    letterCountArr.push({ num: key, count: item.count })
+    letterCountArr.push({ num: Number(key), count: item.count })
   }
 
   letterCountArr.sort((a, b) => a.count - b.count)
@@ -39,6 +39,3 @@ const topKFrequent = (nums, k) => {
 
   return result
 }
-
-console.log(topKFrequent([4, 4, 4, 7, 7, 9], 2)) // [4, 7]
-console.log(topKFrequent([1], 1)) // [1]

@@ -36,8 +36,8 @@ Time Complexity: O(N)
 Space Complexity: O(N)
 */
 
-const evalRPN = (arr) => {
-  if (arr.length == 1) return arr[0]
+export const evalRPN = (arr) => {
+  if (arr.length == 1) return Number(arr[0])
   if (arr.length == 0) return
   let stack = []
   let operators = {
@@ -61,6 +61,3 @@ const evalRPN = (arr) => {
 
   return stack[0]
 }
-console.log(evalRPN(['2', '1', '+', '3', '*'])) // => 9
-console.log(evalRPN(['4', '13', '5', '/', '+'])) // => 6
-console.log(evalRPN(['10', '6', '9', '3', '+', '-11', '*', '/', '*', '17', '+', '5', '+'])) // => 22
