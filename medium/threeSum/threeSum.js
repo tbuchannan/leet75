@@ -12,7 +12,7 @@ The distinct triplets are [-1,0,1] and [-1,-1,2].
 Notice that the order of the output and the order of the triplets does not matter.
 */
 
-const threeSum = (nums) => {
+export const threeSum = (nums) => {
   const result = []
   nums.sort((a, b) => a - b)
 
@@ -47,7 +47,3 @@ const threeSum = (nums) => {
   }
   return result
 }
-
-console.log(threeSum([-1, 0, 1, 2, -1, -4]))
-console.log(threeSum([0, 1, 1]))
-console.log(threeSum([0, 0, 0]))

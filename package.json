@@ -13,16 +13,17 @@
     "type": "git",
     "url": "git+https://github.com/tbuchannan/leet75.git"
   },
-  "lint-staged": {
-    "**/*.js": [
-      "prettier --write",
-      "npm test"
-    ]
-  },
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "test:staged": "jest --bail --findRelatedTests",
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write",
+      "npm run test:staged"
+    ]
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.4",

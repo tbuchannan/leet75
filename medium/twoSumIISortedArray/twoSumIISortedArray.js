@@ -24,7 +24,7 @@ Output: [1,2]
 Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].
 */
 
-const twoSum = (arr, target) => {
+export const twoSum = (arr, target) => {
   let left = 0
   let right = arr.length - 1
 
@@ -38,6 +38,3 @@ const twoSum = (arr, target) => {
     }
   }
 }
-console.log(twoSum([2, 7, 11, 15], 9)) // =>  [1, 2]
-console.log(twoSum([2, 3, 4], 6)) // =>  [1, 3]
-console.log(twoSum([-1, 0], -1)) // =>  [1, 2]

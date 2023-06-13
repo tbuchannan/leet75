@@ -15,13 +15,13 @@ Space Complexity: O(N)
  
 */
 
-class MinStack {
+export class MinStack {
   constructor() {
     this.stack = []
     this.min = []
   }
 
-  push = (val) => {
+  push(val) {
     this.stack.push(val)
     if (this.min.length < 1) {
       this.min.push(val)
@@ -30,27 +30,18 @@ class MinStack {
     }
   }
 
-  pop = () => {
+  pop() {
     if (this.stack[this.stack.length - 1] == this.min[this.min.length - 1]) {
       this.min.pop()
     }
     this.stack.pop()
   }
 
-  top = () => {
+  top() {
     return this.stack[this.stack.length - 1]
   }
 
-  getMin = () => {
+  getMin() {
     return this.min[this.min.length - 1]
   }
 }
-
-let minS = new MinStack()
-minS.push(-2)
-minS.push(0)
-minS.push(-3)
-console.log(minS.getMin()) // => -3
-console.log(minS.pop())
-console.log(minS.top()) // => 0
-console.log(minS.getMin()) // => -2
